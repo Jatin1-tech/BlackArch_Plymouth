@@ -50,7 +50,11 @@ cd blackarch-plymouth
 Run the installer:
 
 ```bash
-bash install.sh
+chmod +x install.sh
+```
+
+```bash
+./install.sh
 ```
 
 Reboot:
