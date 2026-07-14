@@ -10,7 +10,10 @@ Designed to provide a clean, minimal, and visually polished boot experience insp
 
 > **BlackArch_Plymouth.mp4**
 
-*(Upload `BlackArch_Plymouth.mp4` to GitHub. Once uploaded, replace this section with GitHub's embedded video preview.)*
+
+https://github.com/user-attachments/assets/fff156b6-52c7-43e2-82ab-580b9dc7c8c3
+
+
 
 ---
 
