@@ -8,24 +8,19 @@ Designed to provide a clean, minimal, and visually polished boot experience insp
 
 # 🎥 Preview
 
-> **BlackArch_Plymouth.mp4**
-
-
 https://github.com/user-attachments/assets/fff156b6-52c7-43e2-82ab-580b9dc7c8c3
-
-
 
 ---
 
 # ✨ Features
 
 - 🖤 BlackArch-inspired boot animation
-- 🎬 180 handcrafted animation frames
-- ⚡ Smooth 30 FPS playback
+- 🎬 Smooth 180-frame animation
+- ⚡ 30 FPS playback
 - 📺 Optimized for Full HD (1920×1080)
-- 🛑 Holds the final frame until boot finishes
+- 🛑 Holds the final frame until the boot process completes
 - 🐧 Plymouth Script Module compatible
-- 🎨 Clean and minimal dark aesthetic
+- 🎨 Minimal and clean BlackArch aesthetic
 
 ---
 
@@ -43,34 +38,50 @@ sudo pacman -S plymouth
 
 ---
 
-# 📥 Installation
+# 🚀 Installation
 
-### Clone the repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/Jatin1-tech/BlackArch_Plymouth.git
-cd BlackArch_Plymouth
+git clone https://github.com/Jatin1-tech/blackarch-plymouth.git
+cd blackarch-plymouth
 ```
 
-### Copy the theme
+Run the installer:
+
+```bash
+bash install.sh
+```
+
+Reboot:
+
+```bash
+reboot
+```
+
+---
+
+# 📦 Manual Installation
+
+Copy the theme:
 
 ```bash
 sudo cp -r BlackArch_Plymouth /usr/share/plymouth/themes/
 ```
 
-### Set the theme
+Select the theme:
 
 ```bash
 sudo plymouth-set-default-theme BlackArch_Plymouth
 ```
 
-### Rebuild initramfs
+Rebuild the initramfs:
 
 ```bash
 sudo mkinitcpio -P
 ```
 
-### Reboot
+Reboot:
 
 ```bash
 reboot
@@ -80,7 +91,9 @@ reboot
 
 # ⚙️ mkinitcpio Configuration
 
-Ensure Plymouth is enabled inside:
+Ensure Plymouth is included in your hooks.
+
+File:
 
 ```text
 /etc/mkinitcpio.conf
@@ -92,7 +105,7 @@ Example:
 HOOKS=(base udev plymouth autodetect modconf kms keyboard keymap consolefont block filesystems fsck)
 ```
 
-After editing:
+After making changes:
 
 ```bash
 sudo mkinitcpio -P
@@ -103,15 +116,18 @@ sudo mkinitcpio -P
 # 📁 Repository Structure
 
 ```text
-BlackArch_Plymouth/
-├── BlackArch_001.png
-├── ...
-├── BlackArch_180.png
-├── BlackArch_Plymouth.mp4
-├── BlackArch_Plymouth.plymouth
-├── BlackArch_Plymouth.script
+blackarch-plymouth/
 ├── README.md
-└── LICENSE
+├── LICENSE
+├── .gitignore
+├── install.sh
+├── BlackArch_Plymouth.mp4
+└── BlackArch_Plymouth/
+    ├── BlackArch_Plymouth.plymouth
+    ├── BlackArch_Plymouth.script
+    ├── BlackArch_001.png
+    ├── ...
+    └── BlackArch_180.png
 ```
 
 ---
@@ -125,6 +141,7 @@ BlackArch_Plymouth/
 | Resolution | 1920 × 1080 |
 | Playback | Single Play |
 | End Behaviour | Hold Final Frame |
+| Theme Module | Plymouth Script |
 
 ---
 
@@ -139,15 +156,15 @@ The following components can be customized:
 - Background
 - Animation Behaviour
 
-Main configuration:
+Main configuration file:
 
 ```text
-BlackArch_Plymouth.script
+BlackArch_Plymouth/BlackArch_Plymouth.script
 ```
 
 ---
 
-# 🖥 Tested On
+# 🖥️ Tested On
 
 - Arch Linux
 - Plymouth
@@ -157,27 +174,25 @@ BlackArch_Plymouth.script
 
 ---
 
+# 🤝 Contributing
+
+Contributions, feature requests, bug reports, and improvements are always welcome.
+
+Feel free to open an Issue or submit a Pull Request.
+
+---
+
 # 👨‍💻 Creator
 
 **Jatin1-tech**
 
-GitHub Profile:
-
-**https://github.com/Jatin1-tech**
-
----
-
-# 🤝 Contributing
-
-Contributions, improvements, feature requests, and bug reports are always welcome.
-
-If you'd like to improve this project, feel free to open an Issue or submit a Pull Request.
+GitHub: https://github.com/Jatin1-tech
 
 ---
 
 # 📜 License
 
-Licensed under the **MIT License**.
+This project is licensed under the **MIT License**.
 
 See the [LICENSE](LICENSE) file for details.
 
@@ -185,10 +200,15 @@ See the [LICENSE](LICENSE) file for details.
 
 # ⭐ Support
 
-If you enjoyed this project, consider giving it a ⭐ on GitHub.
+If you enjoy this project, consider:
 
-It helps others discover the project and supports future improvements.
+- ⭐ Starring the repository
+- 🍴 Forking the project
+- 🐞 Reporting issues
+- 💡 Suggesting improvements
+
+Every contribution and star helps support future updates.
 
 ---
 
-### Made with ❤️ for the Arch Linux community.
+### Made with ❤️ by **Jatin1-tech** for the Arch Linux community.
