@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=BlackArch Plymouth
+Description=BlackArch boot animation theme with 180-frame sequential playback at 30 FPS
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/BlackArch_Plymouth
+ScriptFile=/usr/share/plymouth/themes/BlackArch_Plymouth/BlackArch_Plymouth.script
